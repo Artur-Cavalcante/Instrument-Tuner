@@ -12,8 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_audio_capture: ^1.1.1
   flutter_localizations:
     sdk: flutter
+  pitch_detector_dart: ^0.0.2
+  pitchupdart: ^0.0.2
 
 dev_dependencies:
   flutter_test:
