@@ -10,6 +10,7 @@ environment:
   sdk: '>=2.18.0 <3.0.0'
 
 dependencies:
+  desktop_window: ^0.4.0
   flutter:
     sdk: flutter
   flutter_audio_capture: ^1.1.1
@@ -17,6 +18,9 @@ dependencies:
     sdk: flutter
   pitch_detector_dart: ^0.0.2
   pitchupdart: ^0.0.2
+  syncfusion_flutter_gauges: ^22.2.7
+  syncfusion_localizations: ^22.2.7
+  url_launcher: ^6.1.12
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +34,6 @@ flutter:
   # Enable generation of localized Strings from arb files.
   generate: true
 
-  assets:
-    # Add assets from the images directory to the application.
-    - assets/images/
+#  assets:
+#    # Add assets from the images directory to the application.
+#    - assets/images/
