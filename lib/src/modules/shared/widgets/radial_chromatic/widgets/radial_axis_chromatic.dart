@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
-import 'radial_chromatic_needle_pointer.dart';
-
 class RadialAxisChromatic extends StatelessWidget {
   const RadialAxisChromatic({
     super.key,
@@ -20,12 +18,6 @@ class RadialAxisChromatic extends StatelessWidget {
         radiusFactor: 0.9,
         showLabels: false,
         ranges: <GaugeRange>[
-          // const RadialAxisRange().build(context),
-          // const RadialAxisRange().build(context),
-          // const RadialAxisRange().build(context),
-          // const RadialAxisRange().build(context),
-          // const RadialAxisRange().build(context),
-          //TODO mudar
           GaugeRange(
           startValue: -50,
           endValue: 10,
@@ -67,11 +59,7 @@ class RadialAxisChromatic extends StatelessWidget {
               color: const Color.fromRGBO(195, 35, 69, 0.75)
           ),
         ],
-        annotations: <GaugeAnnotation>[
-          //const RadialChromaticAnnotation().build(context),
-          //const RadialChromaticAnnotation().build(context),
-          //TODO mudar parametros
-          
+        annotations: const <GaugeAnnotation>[
           GaugeAnnotation(
               angle: 90,
               positionFactor: 0.35,
@@ -89,8 +77,28 @@ class RadialAxisChromatic extends StatelessWidget {
             ),
           )
         ],
-        pointers: <GaugePointer>[
-          const RadialChromaticNeedlePointer().build(context)
+        pointers: const <GaugePointer>[
+          NeedlePointer(
+              value: 0,
+              needleStartWidth: 0,
+              needleEndWidth: 5,
+              animationType: AnimationType.easeOutBack,
+              enableAnimation: true,
+              animationDuration: 1200,
+              knobStyle: KnobStyle(
+                  knobRadius: 0.09,
+                  borderColor: Color(0xFFED7615),
+                  color: Color(0xFFED7615),
+                  borderWidth: 0.035
+              ),
+              tailStyle: TailStyle(
+                  color: Color(0xFFED7615),
+                  width: 4,
+                  length: 0.15
+              ),
+              needleColor: Color(0xFFED7615),
+              needleLength: 0.6
+          )
         ],
         axisLabelStyle: const GaugeTextStyle(fontSize: 10),
         majorTickStyle: const MajorTickStyle(
