@@ -1,5 +1,5 @@
-# instrument-tuner
-A simple and full instrument tuner
+# Instrument-Tuner
+A simple instrument tuner
 
 ## Briefing
 
